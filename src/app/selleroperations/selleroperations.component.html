@@ -1,0 +1,91 @@
+<h3>Online Auction</h3>
+<img src="assets\OIP (1).jpg">
+<form (ngSubmit)="updateSeller()">
+    <!-- row#1 -->
+    <div class="row">
+        <div class="col-2">
+            <label>Id</label>
+        </div>
+        <div class="col-4">
+            <input type="text" [(ngModel)]="seller.id" name="id" class="form-control"/>
+        </div>
+    </div>
+
+    <!-- row#2 -->
+    <div class="row">
+        <div class="col-2">
+            <label>NAME</label>
+        </div>
+        <div class="col-4">
+            <input type="text" [(ngModel)]="seller.name" name="name" class="form-control"/>
+        </div>
+    </div>
+
+    <!-- row#3 -->
+    <div class="row">
+        <div class="col-2">
+            <label>Email</label>
+        </div>
+        <div class="col-4">
+            <input type="text" [(ngModel)]="seller.email" name="email" class="form-control"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Password</label>
+        </div>
+        <div class="col-4">
+            <input type="text" [(ngModel)]="seller.password" name="password" class="form-control"/>
+        </div>
+    </div>
+
+    <!-- row#4 -->
+    <div class="row">
+        <div class="col-2">
+            <label>CATEGORY</label>
+        </div>
+        <div class="col-4">
+            <select [(ngModel)]="seller.category" name="category" class="form-control">
+                <option selected>Category</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Home Interiors">Home Interiors</option>
+    <option value="Groceries">Groceries</option>
+    <option value="Electronics">Electronics</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>PRODUCTS</label>
+        </div>
+        <div class="col-4">
+            <select [(ngModel)]="seller.product" name="product" class="form-control">
+                <option selected>Add Product</option>
+    <option value="Levis Shirt">Levis Shirt</option>
+    <option value="2">Levis Pant</option>
+    <option value="3">Lee cooper Shirt</option>
+    <option value="4">Lee cooper Pant</option>
+    <option value="5">Puma Shoes</option>
+    <option value="6">Woodland Shoes</option>
+    <option value="7">Nike Shoes</option>
+    <option value="8">Reebok Shoes</option>
+    <option value="9">Samsung Tab</option>
+    <option value="10">Samsung galaxy Z fold</option>
+    <option value="11">Samsung galzy Z flip</option>
+    <option value="12">i phone 12</option>
+    <option value="13">i phone 13</option>
+    <option value="14">i phone 14</option>
+            </select>
+        </div>
+    </div>
+
+    
+
+      
+    <input type="submit" value="Submit" routerLink="/slist" class="btn btn-success"/>
+</form>
+
+
+
+
+
